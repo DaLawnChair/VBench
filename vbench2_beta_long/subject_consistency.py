@@ -6,9 +6,9 @@ import torch.nn.functional as F
 import torchvision.transforms as transforms
 from tqdm import tqdm
 from PIL import Image
-from dreamsim import dreamsim
+# from dreamsim import dreamsim
 from decord import VideoReader
-from torchvision.io import write_video
+# from torchvision.io import write_video #[][] not needed
 from vbench.subject_consistency import compute_subject_consistency, subject_consistency
 from vbench.utils import load_video, load_dimension_info, dino_transform, dino_transform_Image
 from vbench2_beta_long.utils import reorganize_clips_results, create_video_from_first_frames, fuse_inclip_clip2clip

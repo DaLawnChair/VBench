@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torchvision.transforms as transforms
 from PIL import Image
-from dreamsim import dreamsim
+from dreamsim import dreamsim # [][] not needed if using clip instead of dreamsim
 from tqdm import tqdm
 from vbench.background_consistency import compute_background_consistency, background_consistency
 from vbench.utils import load_video, load_dimension_info, dino_transform, dino_transform_Image, clip_transform

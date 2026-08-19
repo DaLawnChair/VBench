@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//shared/miniconda3/envs/vbench/**)",
+      "Bash(python3 -c \"import sys; print\\('\\\\n'.join\\(sys.path\\)\\)\")",
+      "Bash(pip3 show *)",
+      "Bash(conda info *)",
+      "Bash(nvidia-smi)",
+      "Bash(nvcc --version)",
+      "Bash(python3 -c \"import torch; print\\('torch', torch.__version__, 'cuda build', torch.version.cuda\\)\")",
+      "Bash(pip3 list *)",
+      "Read(//home/bofeng/.local/lib/python3.10/site-packages/**)",
+      "Bash(pip3 config *)",
+      "Read(//home/bofeng/.pip/**)",
+      "Read(//home/bofeng/.config/pip/**)",
+      "Bash(bash -n /shared/bofeng/code/VBench/run_eval.sh)",
+      "Bash(env -i HOME=/home/bofeng PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin bash -c ' *)"
+    ]
+  }
+}

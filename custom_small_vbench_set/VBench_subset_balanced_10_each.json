@@ -1,0 +1,1072 @@
+[
+  {
+    "prompt_en": "A cute happy Corgi playing in park, sunset, in cyberpunk style",
+    "dimension": [
+      "appearance_style"
+    ],
+    "auxiliary_info": {
+      "appearance_style": {
+        "appearance_style": "in cyberpunk style"
+      }
+    }
+  },
+  {
+    "prompt_en": "A tranquil tableau of in the serene courtyard, a centuries-old stone well stood as a symbol of a bygone era, its mossy stones bearing witness to the passage of time",
+    "dimension": [
+      "temporal_flickering"
+    ]
+  },
+  {
+    "prompt_en": "A tranquil tableau of a bunch of grapes",
+    "dimension": [
+      "temporal_flickering"
+    ]
+  },
+  {
+    "prompt_en": "a purple car",
+    "dimension": [
+      "color"
+    ],
+    "auxiliary_info": {
+      "color": {
+        "color": "purple"
+      }
+    }
+  },
+  {
+    "prompt_en": "an apple on the top of a sandwich, front view",
+    "dimension": [
+      "spatial_relationship"
+    ],
+    "auxiliary_info": {
+      "spatial_relationship": {
+        "spatial_relationship": {
+          "object_a": "apple",
+          "object_b": "sandwich",
+          "relationship": "on the top of"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "a bowl and a remote",
+    "dimension": [
+      "multiple_objects"
+    ],
+    "auxiliary_info": {
+      "multiple_objects": {
+        "object": "bowl and remote"
+      }
+    }
+  },
+  {
+    "prompt_en": "a blue chair",
+    "dimension": [
+      "color"
+    ],
+    "auxiliary_info": {
+      "color": {
+        "color": "blue"
+      }
+    }
+  },
+  {
+    "prompt_en": "An astronaut flying in space by Hokusai, in the style of Ukiyo",
+    "dimension": [
+      "appearance_style"
+    ],
+    "auxiliary_info": {
+      "appearance_style": {
+        "appearance_style": "by Hokusai, in the style of Ukiyo"
+      }
+    }
+  },
+  {
+    "prompt_en": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background, pan left",
+    "dimension": [
+      "temporal_style"
+    ]
+  },
+  {
+    "prompt_en": "A person is driving car",
+    "dimension": [
+      "human_action"
+    ]
+  },
+  {
+    "prompt_en": "outdoor track",
+    "dimension": [
+      "scene",
+      "background_consistency"
+    ],
+    "auxiliary_info": {
+      "scene": {
+        "scene": {
+          "scene": "outdoor track"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "A beautiful coastal beach in spring, waves lapping on sand, tilt down",
+    "dimension": [
+      "temporal_style"
+    ]
+  },
+  {
+    "prompt_en": "a car accelerating to gain speed",
+    "dimension": [
+      "subject_consistency",
+      "dynamic_degree",
+      "motion_smoothness"
+    ]
+  },
+  {
+    "prompt_en": "an airplane accelerating to gain speed",
+    "dimension": [
+      "subject_consistency",
+      "dynamic_degree",
+      "motion_smoothness"
+    ]
+  },
+  {
+    "prompt_en": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background, Van Gogh style",
+    "dimension": [
+      "appearance_style"
+    ],
+    "auxiliary_info": {
+      "appearance_style": {
+        "appearance_style": "Van Gogh style"
+      }
+    }
+  },
+  {
+    "prompt_en": "a black chair",
+    "dimension": [
+      "color"
+    ],
+    "auxiliary_info": {
+      "color": {
+        "color": "black"
+      }
+    }
+  },
+  {
+    "prompt_en": "Gwen Stacy reading a book, animated style",
+    "dimension": [
+      "appearance_style"
+    ],
+    "auxiliary_info": {
+      "appearance_style": {
+        "appearance_style": "animated style"
+      }
+    }
+  },
+  {
+    "prompt_en": "A happy fuzzy panda playing guitar nearby a campfire, snow mountain in the background",
+    "dimension": [
+      "overall_consistency",
+      "aesthetic_quality",
+      "imaging_quality"
+    ]
+  },
+  {
+    "prompt_en": "an orange bowl",
+    "dimension": [
+      "color"
+    ],
+    "auxiliary_info": {
+      "color": {
+        "color": "orange"
+      }
+    }
+  },
+  {
+    "prompt_en": "a purple suitcase",
+    "dimension": [
+      "color"
+    ],
+    "auxiliary_info": {
+      "color": {
+        "color": "purple"
+      }
+    }
+  },
+  {
+    "prompt_en": "a vase",
+    "dimension": [
+      "object_class"
+    ],
+    "auxiliary_info": {
+      "object_class": {
+        "object": "vase"
+      }
+    }
+  },
+  {
+    "prompt_en": "a tv",
+    "dimension": [
+      "object_class"
+    ],
+    "auxiliary_info": {
+      "object_class": {
+        "object": "tv"
+      }
+    }
+  },
+  {
+    "prompt_en": "A panda playing on a swing set",
+    "dimension": [
+      "overall_consistency",
+      "aesthetic_quality",
+      "imaging_quality"
+    ]
+  },
+  {
+    "prompt_en": "A super cool giant robot in Cyberpunk Beijing",
+    "dimension": [
+      "overall_consistency",
+      "aesthetic_quality",
+      "imaging_quality"
+    ]
+  },
+  {
+    "prompt_en": "Snow rocky mountains peaks canyon. snow blanketed rocky mountains surround and shadow deep canyons. the canyons twist and bend through the high elevated mountain peaks, with an intense shaking effect",
+    "dimension": [
+      "temporal_style"
+    ]
+  },
+  {
+    "prompt_en": "A fantasy landscape",
+    "dimension": [
+      "overall_consistency",
+      "aesthetic_quality",
+      "imaging_quality"
+    ]
+  },
+  {
+    "prompt_en": "A person is washing hands",
+    "dimension": [
+      "human_action"
+    ]
+  },
+  {
+    "prompt_en": "A tranquil tableau of beneath the shade of a solitary oak tree, an old wooden park bench sat patiently",
+    "dimension": [
+      "temporal_flickering"
+    ]
+  },
+  {
+    "prompt_en": "A person is pushing cart",
+    "dimension": [
+      "human_action"
+    ]
+  },
+  {
+    "prompt_en": "a boat slowing down to stop",
+    "dimension": [
+      "subject_consistency",
+      "dynamic_degree",
+      "motion_smoothness"
+    ]
+  },
+  {
+    "prompt_en": "A couple in formal evening wear going home get caught in a heavy downpour with umbrellas, pixel art",
+    "dimension": [
+      "appearance_style"
+    ],
+    "auxiliary_info": {
+      "appearance_style": {
+        "appearance_style": "pixel art"
+      }
+    }
+  },
+  {
+    "prompt_en": "a bus turning a corner",
+    "dimension": [
+      "subject_consistency",
+      "dynamic_degree",
+      "motion_smoothness"
+    ]
+  },
+  {
+    "prompt_en": "a giraffe and a bird",
+    "dimension": [
+      "multiple_objects"
+    ],
+    "auxiliary_info": {
+      "multiple_objects": {
+        "object": "giraffe and bird"
+      }
+    }
+  },
+  {
+    "prompt_en": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background, watercolor painting",
+    "dimension": [
+      "appearance_style"
+    ],
+    "auxiliary_info": {
+      "appearance_style": {
+        "appearance_style": "watercolor painting"
+      }
+    }
+  },
+  {
+    "prompt_en": "Snow rocky mountains peaks canyon. snow blanketed rocky mountains surround and shadow deep canyons. the canyons twist and bend through the high elevated mountain peaks, racking focus",
+    "dimension": [
+      "temporal_style"
+    ]
+  },
+  {
+    "prompt_en": "a microwave on the top of an oven, front view",
+    "dimension": [
+      "spatial_relationship"
+    ],
+    "auxiliary_info": {
+      "spatial_relationship": {
+        "spatial_relationship": {
+          "object_a": "microwave",
+          "object_b": "oven",
+          "relationship": "on the top of"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "Gwen Stacy reading a book, zoom in",
+    "dimension": [
+      "temporal_style"
+    ]
+  },
+  {
+    "prompt_en": "A tranquil tableau of in the quaint village square, a traditional wrought-iron streetlamp featured delicate filigree patterns and amber-hued glass panels",
+    "dimension": [
+      "temporal_flickering"
+    ]
+  },
+  {
+    "prompt_en": "a sports ball",
+    "dimension": [
+      "object_class"
+    ],
+    "auxiliary_info": {
+      "object_class": {
+        "object": "sports ball"
+      }
+    }
+  },
+  {
+    "prompt_en": "a skateboard on the top of a surfboard, front view",
+    "dimension": [
+      "spatial_relationship"
+    ],
+    "auxiliary_info": {
+      "spatial_relationship": {
+        "spatial_relationship": {
+          "object_a": "skateboard",
+          "object_b": "surfboard",
+          "relationship": "on the top of"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "a shark is swimming in the ocean, watercolor painting",
+    "dimension": [
+      "appearance_style"
+    ],
+    "auxiliary_info": {
+      "appearance_style": {
+        "appearance_style": "watercolor painting"
+      }
+    }
+  },
+  {
+    "prompt_en": "a snowboard on the bottom of a kite, front view",
+    "dimension": [
+      "spatial_relationship"
+    ],
+    "auxiliary_info": {
+      "spatial_relationship": {
+        "spatial_relationship": {
+          "object_a": "snowboard",
+          "object_b": "kite",
+          "relationship": "on the bottom of"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "a kite",
+    "dimension": [
+      "object_class"
+    ],
+    "auxiliary_info": {
+      "object_class": {
+        "object": "kite"
+      }
+    }
+  },
+  {
+    "prompt_en": "a red vase",
+    "dimension": [
+      "color"
+    ],
+    "auxiliary_info": {
+      "color": {
+        "color": "red"
+      }
+    }
+  },
+  {
+    "prompt_en": "gas station",
+    "dimension": [
+      "scene",
+      "background_consistency"
+    ],
+    "auxiliary_info": {
+      "scene": {
+        "scene": {
+          "scene": "gas station"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "A teddy bear washing the dishes",
+    "dimension": [
+      "overall_consistency",
+      "aesthetic_quality",
+      "imaging_quality"
+    ]
+  },
+  {
+    "prompt_en": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background, in cyberpunk style",
+    "dimension": [
+      "appearance_style"
+    ],
+    "auxiliary_info": {
+      "appearance_style": {
+        "appearance_style": "in cyberpunk style"
+      }
+    }
+  },
+  {
+    "prompt_en": "a truck accelerating to gain speed",
+    "dimension": [
+      "subject_consistency",
+      "dynamic_degree",
+      "motion_smoothness"
+    ]
+  },
+  {
+    "prompt_en": "A person is trimming or shaving beard",
+    "dimension": [
+      "human_action"
+    ]
+  },
+  {
+    "prompt_en": "a horse running to join a herd of its kind",
+    "dimension": [
+      "subject_consistency",
+      "dynamic_degree",
+      "motion_smoothness"
+    ]
+  },
+  {
+    "prompt_en": "a zebra",
+    "dimension": [
+      "object_class"
+    ],
+    "auxiliary_info": {
+      "object_class": {
+        "object": "zebra"
+      }
+    }
+  },
+  {
+    "prompt_en": "a motorcycle and a boat",
+    "dimension": [
+      "multiple_objects"
+    ],
+    "auxiliary_info": {
+      "multiple_objects": {
+        "object": "motorcycle and boat"
+      }
+    }
+  },
+  {
+    "prompt_en": "A panda drinking coffee in a cafe in Paris, tilt down",
+    "dimension": [
+      "temporal_style"
+    ]
+  },
+  {
+    "prompt_en": "In a still frame, a vintage gas lantern, adorned with intricate details, gracing a historic cobblestone square",
+    "dimension": [
+      "temporal_flickering"
+    ]
+  },
+  {
+    "prompt_en": "A person is jogging",
+    "dimension": [
+      "human_action"
+    ]
+  },
+  {
+    "prompt_en": "A tranquil tableau of the lampposts were adorned with Art Deco motifs, their geometric shapes and frosted glass creating a sense of vintage glamour",
+    "dimension": [
+      "temporal_flickering"
+    ]
+  },
+  {
+    "prompt_en": "a train accelerating to gain speed",
+    "dimension": [
+      "subject_consistency",
+      "dynamic_degree",
+      "motion_smoothness"
+    ]
+  },
+  {
+    "prompt_en": "Vincent van Gogh is painting in the room",
+    "dimension": [
+      "overall_consistency",
+      "aesthetic_quality",
+      "imaging_quality"
+    ]
+  },
+  {
+    "prompt_en": "a bed",
+    "dimension": [
+      "object_class"
+    ],
+    "auxiliary_info": {
+      "object_class": {
+        "object": "bed"
+      }
+    }
+  },
+  {
+    "prompt_en": "In a still frame, a park bench with a view of the lake",
+    "dimension": [
+      "temporal_flickering"
+    ]
+  },
+  {
+    "prompt_en": "a blue suitcase",
+    "dimension": [
+      "color"
+    ],
+    "auxiliary_info": {
+      "color": {
+        "color": "blue"
+      }
+    }
+  },
+  {
+    "prompt_en": "an orange and a clock",
+    "dimension": [
+      "multiple_objects"
+    ],
+    "auxiliary_info": {
+      "multiple_objects": {
+        "object": "orange and clock"
+      }
+    }
+  },
+  {
+    "prompt_en": "a cat running happily",
+    "dimension": [
+      "subject_consistency",
+      "dynamic_degree",
+      "motion_smoothness"
+    ]
+  },
+  {
+    "prompt_en": "a bowl",
+    "dimension": [
+      "object_class"
+    ],
+    "auxiliary_info": {
+      "object_class": {
+        "object": "bowl"
+      }
+    }
+  },
+  {
+    "prompt_en": "a banana",
+    "dimension": [
+      "object_class"
+    ],
+    "auxiliary_info": {
+      "object_class": {
+        "object": "banana"
+      }
+    }
+  },
+  {
+    "prompt_en": "a hair drier and a toothbrush",
+    "dimension": [
+      "multiple_objects"
+    ],
+    "auxiliary_info": {
+      "multiple_objects": {
+        "object": "hair drier and toothbrush"
+      }
+    }
+  },
+  {
+    "prompt_en": "a keyboard",
+    "dimension": [
+      "object_class"
+    ],
+    "auxiliary_info": {
+      "object_class": {
+        "object": "keyboard"
+      }
+    }
+  },
+  {
+    "prompt_en": "cemetery",
+    "dimension": [
+      "scene",
+      "background_consistency"
+    ],
+    "auxiliary_info": {
+      "scene": {
+        "scene": {
+          "scene": "cemetery"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "a toothbrush on the left of a sink, front view",
+    "dimension": [
+      "spatial_relationship"
+    ],
+    "auxiliary_info": {
+      "spatial_relationship": {
+        "spatial_relationship": {
+          "object_a": "toothbrush",
+          "object_b": "sink",
+          "relationship": "on the left of"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "A cute happy Corgi playing in park, sunset, racking focus",
+    "dimension": [
+      "temporal_style"
+    ]
+  },
+  {
+    "prompt_en": "carrousel",
+    "dimension": [
+      "scene",
+      "background_consistency"
+    ],
+    "auxiliary_info": {
+      "scene": {
+        "scene": {
+          "scene": "carrousel"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "a person and a hair drier",
+    "dimension": [
+      "multiple_objects"
+    ],
+    "auxiliary_info": {
+      "multiple_objects": {
+        "object": "person and hair drier"
+      }
+    }
+  },
+  {
+    "prompt_en": "A super robot protecting city",
+    "dimension": [
+      "overall_consistency",
+      "aesthetic_quality",
+      "imaging_quality"
+    ]
+  },
+  {
+    "prompt_en": "a baseball bat",
+    "dimension": [
+      "object_class"
+    ],
+    "auxiliary_info": {
+      "object_class": {
+        "object": "baseball bat"
+      }
+    }
+  },
+  {
+    "prompt_en": "supermarket",
+    "dimension": [
+      "scene",
+      "background_consistency"
+    ],
+    "auxiliary_info": {
+      "scene": {
+        "scene": {
+          "scene": "supermarket"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "A person is writing",
+    "dimension": [
+      "human_action"
+    ]
+  },
+  {
+    "prompt_en": "In a still frame, a pear",
+    "dimension": [
+      "temporal_flickering"
+    ]
+  },
+  {
+    "prompt_en": "an orange on the top of a carrot, front view",
+    "dimension": [
+      "spatial_relationship"
+    ],
+    "auxiliary_info": {
+      "spatial_relationship": {
+        "spatial_relationship": {
+          "object_a": "orange",
+          "object_b": "carrot",
+          "relationship": "on the top of"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "lighthouse",
+    "dimension": [
+      "scene",
+      "background_consistency"
+    ],
+    "auxiliary_info": {
+      "scene": {
+        "scene": {
+          "scene": "lighthouse"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "a pink chair",
+    "dimension": [
+      "color"
+    ],
+    "auxiliary_info": {
+      "color": {
+        "color": "pink"
+      }
+    }
+  },
+  {
+    "prompt_en": "a microwave on the bottom of an oven, front view",
+    "dimension": [
+      "spatial_relationship"
+    ],
+    "auxiliary_info": {
+      "spatial_relationship": {
+        "spatial_relationship": {
+          "object_a": "microwave",
+          "object_b": "oven",
+          "relationship": "on the bottom of"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "a pink suitcase",
+    "dimension": [
+      "color"
+    ],
+    "auxiliary_info": {
+      "color": {
+        "color": "pink"
+      }
+    }
+  },
+  {
+    "prompt_en": "street",
+    "dimension": [
+      "scene",
+      "background_consistency"
+    ],
+    "auxiliary_info": {
+      "scene": {
+        "scene": {
+          "scene": "street"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "Cinematic shot of Van Gogh's selfie, Van Gogh style",
+    "dimension": [
+      "overall_consistency",
+      "aesthetic_quality",
+      "imaging_quality"
+    ]
+  },
+  {
+    "prompt_en": "A person is brushing teeth",
+    "dimension": [
+      "human_action"
+    ]
+  },
+  {
+    "prompt_en": "The bund Shanghai, zoom in",
+    "dimension": [
+      "temporal_style"
+    ]
+  },
+  {
+    "prompt_en": "fountain",
+    "dimension": [
+      "scene",
+      "background_consistency"
+    ],
+    "auxiliary_info": {
+      "scene": {
+        "scene": {
+          "scene": "fountain"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background, tilt down",
+    "dimension": [
+      "temporal_style"
+    ]
+  },
+  {
+    "prompt_en": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background, pixel art",
+    "dimension": [
+      "appearance_style"
+    ],
+    "auxiliary_info": {
+      "appearance_style": {
+        "appearance_style": "pixel art"
+      }
+    }
+  },
+  {
+    "prompt_en": "A person is rock scissors paper",
+    "dimension": [
+      "human_action"
+    ]
+  },
+  {
+    "prompt_en": "A person is sticking tongue out",
+    "dimension": [
+      "human_action"
+    ]
+  },
+  {
+    "prompt_en": "raceway",
+    "dimension": [
+      "scene",
+      "background_consistency"
+    ],
+    "auxiliary_info": {
+      "scene": {
+        "scene": {
+          "scene": "raceway"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "skis on the bottom of a snowboard, front view",
+    "dimension": [
+      "spatial_relationship"
+    ],
+    "auxiliary_info": {
+      "spatial_relationship": {
+        "spatial_relationship": {
+          "object_a": "skis",
+          "object_b": "snowboard",
+          "relationship": "on the bottom of"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "A tranquil tableau of an ornate Victorian streetlamp standing on a cobblestone street corner, illuminating the empty night",
+    "dimension": [
+      "temporal_flickering"
+    ]
+  },
+  {
+    "prompt_en": "a black suitcase",
+    "dimension": [
+      "color"
+    ],
+    "auxiliary_info": {
+      "color": {
+        "color": "black"
+      }
+    }
+  },
+  {
+    "prompt_en": "Gwen Stacy reading a book, racking focus",
+    "dimension": [
+      "temporal_style"
+    ]
+  },
+  {
+    "prompt_en": "a parking meter and a truck",
+    "dimension": [
+      "multiple_objects"
+    ],
+    "auxiliary_info": {
+      "multiple_objects": {
+        "object": "parking meter and truck"
+      }
+    }
+  },
+  {
+    "prompt_en": "Snow rocky mountains peaks canyon. snow blanketed rocky mountains surround and shadow deep canyons. the canyons twist and bend through the high elevated mountain peaks, surrealism style",
+    "dimension": [
+      "appearance_style"
+    ],
+    "auxiliary_info": {
+      "appearance_style": {
+        "appearance_style": "surrealism style"
+      }
+    }
+  },
+  {
+    "prompt_en": "a tv on the right of a dining table, front view",
+    "dimension": [
+      "spatial_relationship"
+    ],
+    "auxiliary_info": {
+      "spatial_relationship": {
+        "spatial_relationship": {
+          "object_a": "tv",
+          "object_b": "dining table",
+          "relationship": "on the right of"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "A robot DJ is playing the turntable, in heavy raining futuristic tokyo rooftop cyberpunk night, sci-fi, fantasy",
+    "dimension": [
+      "overall_consistency",
+      "aesthetic_quality",
+      "imaging_quality"
+    ]
+  },
+  {
+    "prompt_en": "a toothbrush and a sink",
+    "dimension": [
+      "multiple_objects"
+    ],
+    "auxiliary_info": {
+      "multiple_objects": {
+        "object": "toothbrush and sink"
+      }
+    }
+  },
+  {
+    "prompt_en": "a carrot on the top of a hot dog, front view",
+    "dimension": [
+      "spatial_relationship"
+    ],
+    "auxiliary_info": {
+      "spatial_relationship": {
+        "spatial_relationship": {
+          "object_a": "carrot",
+          "object_b": "hot dog",
+          "relationship": "on the top of"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "a refrigerator and skis",
+    "dimension": [
+      "multiple_objects"
+    ],
+    "auxiliary_info": {
+      "multiple_objects": {
+        "object": "refrigerator and skis"
+      }
+    }
+  },
+  {
+    "prompt_en": "A person is playing chess",
+    "dimension": [
+      "human_action"
+    ]
+  },
+  {
+    "prompt_en": "a motorcycle cruising along a coastal highway",
+    "dimension": [
+      "subject_consistency",
+      "dynamic_degree",
+      "motion_smoothness"
+    ]
+  },
+  {
+    "prompt_en": "a truck stuck in traffic during rush hour",
+    "dimension": [
+      "subject_consistency",
+      "dynamic_degree",
+      "motion_smoothness"
+    ]
+  },
+  {
+    "prompt_en": "industrial area",
+    "dimension": [
+      "scene",
+      "background_consistency"
+    ],
+    "auxiliary_info": {
+      "scene": {
+        "scene": {
+          "scene": "industrial area"
+        }
+      }
+    }
+  },
+  {
+    "prompt_en": "A tranquil tableau of a vintage rocking chair was placed on the porch",
+    "dimension": [
+      "temporal_flickering"
+    ]
+  },
+  {
+    "prompt_en": "a wine glass and a chair",
+    "dimension": [
+      "multiple_objects"
+    ],
+    "auxiliary_info": {
+      "multiple_objects": {
+        "object": "wine glass and chair"
+      }
+    }
+  },
+  {
+    "prompt_en": "A steam train moving on a mountainside",
+    "dimension": [
+      "overall_consistency",
+      "aesthetic_quality",
+      "imaging_quality"
+    ]
+  }
+]

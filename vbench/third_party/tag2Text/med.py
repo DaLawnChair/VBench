@@ -22,10 +22,8 @@ from torch.nn import CrossEntropyLoss
 import torch.nn.functional as F
 
 from transformers.activations import ACT2FN
-from transformers.file_utils import (
-    ModelOutput,
-)
 from transformers.modeling_outputs import (
+    ModelOutput,
     BaseModelOutputWithPastAndCrossAttentions,
     BaseModelOutputWithPoolingAndCrossAttentions,
     CausalLMOutputWithCrossAttentions,

@@ -49,12 +49,13 @@ def parse_args():
     )
     parser.add_argument(
         "--mode",
-        choices=['custom_input', 'vbench_standard', 'vbench_category', 'long_vbench_standard', 'long_custom_input'],
+        choices=['custom_input', 'vbench_standard', 'vbench_category', 'long_vbench_standard', 'long_custom_input', 'long_custom_input_original'],
         default='vbench_standard',
         help="""This flags determine the mode of evaluations, choose one of the following:
         1. "custom_input": receive input prompt from either --prompt/--prompt_file flags or the filename
         2. "vbench_standard": evaluate on standard prompt suite of VBench
         3. "vbench_category": evaluate on specific category
+        4. long_custom_input_original # custom, adds back the original implementation
         """,
     )
     parser.add_argument(
@@ -233,8 +234,9 @@ def main():
     
     if (args.prompt_file is not None) and (args.prompt != ""):
         raise Exception("--prompt_file and --prompt cannot be used together")
-    if (args.prompt_file is not None or args.prompt != "") and (not args.mode=='custom_input'):
-        raise Exception("must set --mode=custom_input for using external prompt")
+    #[][] john: comment out to allow for custom input over all dimensions
+    # if (args.prompt_file is not None or args.prompt != "") and (not args.mode=='custom_input'):
+    #     raise Exception("must set --mode=custom_input for using external prompt")
 
     if args.prompt_file:
         with open(args.prompt_file, 'r') as f:

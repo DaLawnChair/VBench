@@ -258,7 +258,7 @@ def init_submodules(dimension_list, local=False, read_frame=False):
                 wget_command = ['wget', 'https://huggingface.co/OpenGVLab/VBench_Used_Models/resolve/main/l16_ptk710_ftk710_ftk400_f16_res224.pth', '-P', os.path.dirname(umt_path)]
                 subprocess.run(wget_command, check=True)
             submodules_dict[dimension] = [umt_path,]
-        elif dimension == 'temporal_flickering':
+        elif dimension in ('temporal_flickering', 'temporal_flickering_in_chunk', 'temporal_flickering_interchunk', 'temporal_flickering_ratio', 'unitemp_flickering_ratio'):
             submodules_dict[dimension] = []
         elif dimension == 'motion_smoothness':
             CUR_DIR = os.path.dirname(os.path.abspath(__file__))

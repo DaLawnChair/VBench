@@ -1,3 +1,9 @@
+# ignore pretrained models 
+pretrained/**
+# ignore view_videos
+view_videos*
+view_videos/**
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

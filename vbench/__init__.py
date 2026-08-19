@@ -18,13 +18,16 @@ class VBench(object):
     def build_full_dimension_list(self, ):
         return ["subject_consistency", "background_consistency", "aesthetic_quality", "imaging_quality", "object_class", "multiple_objects", "color", "spatial_relationship", "scene", "temporal_style", 'overall_consistency', "human_action", "temporal_flickering", "motion_smoothness", "dynamic_degree", "appearance_style"]        
 
+
+    # [][] JOHN: replace, the prompts for the most part are the same, just relies on custom input for LLM extension
     def check_dimension_requires_extra_info(self, dimension_list):
-        dim_custom_not_supported = set(dimension_list) & set([
-            'object_class', 'multiple_objects', 'scene', 'appearance_style', 'color', 'spatial_relationship'
-        ])
+        # dim_custom_not_supported = set(dimension_list) & set([
+        #     'object_class', 'multiple_objects', 'scene', 'appearance_style', 'color', 'spatial_relationship'
+        # ])
 
-        assert len(dim_custom_not_supported) == 0, f"dimensions : {dim_custom_not_supported} not supported for custom input"
-
+        # assert len(dim_custom_not_supported) == 0, f"dimensions : {dim_custom_not_supported} not supported for custom input"
+        print("======================\n\nNOTICE: patched check_dimension_requires_extra_info in \
+              /shared/john/VBench/vbench/__init__.py to allow custom prompt\n\n=============================")
     def build_custom_image_dict(self, directory):
         image_dict = {}
         
@@ -41,9 +44,114 @@ class VBench(object):
         return image_dict
  
 
+    # [][] JOHN: replace, the assert doesn't allow for generations of prompts more prompts than what is specified.
     def build_full_info_json(self, videos_path, name, dimension_list, prompt_list=[],  special_str='', verbose=False, custom_image_folder=None, mode='vbench_standard', **kwargs):
         cur_full_info_list=[] # to save the prompt and video path info for the current dimensions
         if mode=='custom_input':
+            self.check_dimension_requires_extra_info(dimension_list)
+            if custom_image_folder:
+                custom_image_dict = self.build_custom_image_dict(custom_image_folder)
+            
+            if os.path.isfile(videos_path):
+                if custom_image_folder is None:
+                    cur_full_info_list = [{"prompt_en": get_prompt_from_filename(videos_path), "dimension": dimension_list, "video_list": [videos_path]}]
+                else:
+                    cur_full_info_list = [{"prompt_en": get_prompt_from_filename(videos_path), "dimension": dimension_list, "video_list": [videos_path], "custom_image_path": custom_image_dict[get_prompt_from_filename(videos_path)]}]
+                
+                if len(prompt_list) == 1:
+                    cur_full_info_list[0]["prompt_en"] = prompt_list[0]
+            else:
+                video_names = os.listdir(videos_path)
+
+                cur_full_info_list = []
+
+                # [][] John: ignore for custom logic
+                # if custom_image_folder is None:
+                #     for filename in video_names:
+                #         postfix = Path(os.path.join(videos_path, filename)).suffix
+                #         if postfix.lower() not in ['.mp4', '.gif',]: #  '.jpg', '.png'
+                #             continue
+                #         cur_full_info_list.append({
+                #             "prompt_en": get_prompt_from_filename(filename), 
+                #             "dimension": dimension_list, 
+                #             "video_list": [os.path.join(videos_path, filename)]
+                #         })
+                # else:
+                #     for filename in video_names:
+                #         postfix = Path(os.path.join(videos_path, filename)).suffix
+                #         if postfix.lower() not in ['.mp4', '.gif']: #  '.jpg', '.png'
+                #             continue
+                #         cur_full_info_list.append({
+                #             "prompt_en": get_prompt_from_filename(filename), 
+                #             "dimension": dimension_list, 
+                #             "video_list": [os.path.join(videos_path, filename)],
+                #             "custom_image_path": custom_image_dict[get_prompt_from_filename(filename)]
+                #         })
+
+                if len(prompt_list) > 0:
+                    prompt_list = {os.path.join(videos_path, path): prompt_list[path] for path in prompt_list}
+                    assert len(prompt_list) >= len(cur_full_info_list), """
+                        Number of prompts should match with number of videos.\n
+                        Got {len(prompt_list)=}, {len(cur_full_info_list)=}\n
+                        To read the prompt from filename, delete --prompt_file and --prompt_list
+                        """
+
+                    all_video_path = [os.path.abspath(file) for file in list(chain.from_iterable(vid["video_list"] for vid in cur_full_info_list))]
+                    backslash = "\n"
+                    ## [][]  John update
+                    # assert len(set(all_video_path) - set([os.path.abspath(path_key) for path_key in prompt_list])) == 0, f"""
+                    # The prompts for the following videos are not found in the prompt file: \n
+                    # {backslash.join(set(all_video_path) - set([os.path.abspath(path_key) for path_key in prompt_list]))}
+                    # """
+
+                    video_map = {}
+                    #[][] patch to allow for match file names of the actual videos of concern
+                    # for prompt_key in prompt_list:
+                    #     video_map[os.path.abspath(prompt_key)] = prompt_list[prompt_key]
+                    ## cannot use this, because it replaces prompt with path
+                    # for video_info in cur_full_info_list:
+                    #     video_info["prompt_en"] = video_map[os.path.abspath(video_info["video_list"][0])]
+
+                    prompt_map = {}
+                    for prompt_key in prompt_list:
+                        base_prompt_key = os.path.basename(prompt_key)
+                        abs_prompt_key = os.path.abspath(prompt_key)
+
+                        if base_prompt_key in video_names:
+                            video_map[abs_prompt_key] = prompt_list[prompt_key]
+                            prompt_map[prompt_list[prompt_key]] = prompt_map.get(prompt_list[prompt_key], []) + [abs_prompt_key]
+                        else:
+                            print0(f'WARNING!!! This required video is not found! Missing benchmark videos can lead to unfair evaluation result. The missing video is: {abs_prompt_key}')
+                    # for video_info in cur_full_info_list:
+                    #     if os.path.abspath(video_info["video_list"][0]) in video_map:
+                    #         video_info["prompt_en"] = video_map[os.path.abspath(video_info["video_list"][0])]
+
+                    # file makes sense, should be 956*5+75*20 = 6230 == len(video_map) for 
+                    # /shared/john/VBench/custom_small_vbench_set/sf_prompts_extended_mapping.json
+
+                    ## [][] need to load in file for evaluation json path
+                    full_info_list = load_json(self.full_info_dir)
+                    video_names = os.listdir(videos_path)
+                    postfix = Path(video_names[0]).suffix
+                    for prompt_dict in full_info_list:
+                        # if the prompt belongs to any dimension we want to evaluate
+                        if set(dimension_list) & set(prompt_dict["dimension"]): 
+                            prompt = prompt_dict['prompt_en']
+                            # prompt_dict['video_list'] = []
+                            prompt_dict['video_list'] = prompt_map.get(prompt, [])
+                            # for i in range(5): # video index for the same prompt
+                            #     intended_video_name = f'{prompt}{special_str}-{str(i)}{postfix}'
+                            #     if intended_video_name in video_names: # if the video exists
+                            #         intended_video_path = os.path.join(videos_path, intended_video_name)
+                            #         prompt_dict['video_list'].append(intended_video_path)
+                            #         if verbose:
+                            #             print0(f'Successfully found video: {intended_video_name}')
+                            #     else:
+                            #         print0(f'WARNING!!! This required video is not found! Missing benchmark videos can lead to unfair evaluation result. The missing video is: {intended_video_name}')
+                            cur_full_info_list.append(prompt_dict)
+
+        # save the original implementation of custom input
+        elif mode=='custom_input_original':
             self.check_dimension_requires_extra_info(dimension_list)
             if custom_image_folder:
                 custom_image_dict = self.build_custom_image_dict(custom_image_folder)
@@ -161,7 +269,6 @@ class VBench(object):
                             print0(f'WARNING!!! This required video is not found! Missing benchmark videos can lead to unfair evaluation result. The missing video is: {intended_video_name}')
                     cur_full_info_list.append(prompt_dict)
 
-        
         cur_full_info_path = os.path.join(self.output_path, name+'_full_info.json')
         save_json(cur_full_info_list, cur_full_info_path)
         print0(f'Evaluation meta data saved to {cur_full_info_path}')

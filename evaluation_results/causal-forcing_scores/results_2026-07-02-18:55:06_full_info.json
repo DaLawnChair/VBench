@@ -1,0 +1,1802 @@
+[
+    {
+        "prompt_en": "A lone circus acrobat practices in an empty big\u2011top tent with shafts of sunlight through canvas, fil",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone circus acrobat practices in an empty big\u2011top tent with shafts of sunlight through canvas, fil.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone cyclist rides through a coastal road lined with wildflowers and cliffs above a sparkling sea,",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone cyclist rides through a coastal road lined with wildflowers and cliffs above a sparkling sea,.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone desert camel moves across a vast dune sea under a blazing orange sunset, rendered in ultra\u2011hi",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone desert camel moves across a vast dune sea under a blazing orange sunset, rendered in ultra\u2011hi.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone flamenco dancer in a black dress is framed in a candlelit courtyard with tiled walls and oran",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone flamenco dancer in a black dress is framed in a candlelit courtyard with tiled walls and oran.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone hiker with a blue backpack is the only person on a wooden trail through an autumn forest, sho",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone hiker with a blue backpack is the only person on a wooden trail through an autumn forest, sho.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone hummingbird bronze sculpture in a calm city square is captured in cinematic 4K, with rain-sli",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone hummingbird bronze sculpture in a calm city square is captured in cinematic 4K, with rain-sli.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone hummingbird is framed against a canyon filled with blooming desert flowers after rain, filmed",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone hummingbird is framed against a canyon filled with blooming desert flowers after rain, filmed.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone ice skater glides across a frozen lake under northern lights, filmed in cinematic UHD with cr",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone ice skater glides across a frozen lake under northern lights, filmed in cinematic UHD with cr.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone kayaker is the only person on a mirror\u2011smooth fjord surrounded by steep green cliffs and wate",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone kayaker is the only person on a mirror\u2011smooth fjord surrounded by steep green cliffs and wate.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone lantern\u2011lit fisherman stands on a wooden pier over a calm lake surrounded by misty mountains,",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone lantern\u2011lit fisherman stands on a wooden pier over a calm lake surrounded by misty mountains,.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone lighthouse keeper in a raincoat is framed against a stormy coastline at dawn, filmed in cinem",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone lighthouse keeper in a raincoat is framed against a stormy coastline at dawn, filmed in cinem.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone man crouches beside a vintage motorcycle in a dim garage, hands steady on the seat; then he s",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone man crouches beside a vintage motorcycle in a dim garage, hands steady on the seat; then he s.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone man is on one knee at center stage beneath a single overhead beam, face angled down to the bl",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone man is on one knee at center stage beneath a single overhead beam, face angled down to the bl.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone man kneels on a stage beneath a single spotlight, head lowered on dark boards; then he rises ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone man kneels on a stage beneath a single spotlight, head lowered on dark boards; then he rises .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone man kneels on the shadowed boards of a theater stage under one focused light, head lowered in",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone man kneels on the shadowed boards of a theater stage under one focused light, head lowered in.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone man stands in a wide farm field, boots sinking slightly into soil; then he drops to one knee ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone man stands in a wide farm field, boots sinking slightly into soil; then he drops to one knee .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone medieval knight in polished armor is set in a quiet courtyard of ivy\u2011covered stone and sunlit",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone medieval knight in polished armor is set in a quiet courtyard of ivy\u2011covered stone and sunlit.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone meteor streak is the subject over a quiet mountain lake at night, captured in cinematic UHD w",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone meteor streak is the subject over a quiet mountain lake at night, captured in cinematic UHD w.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone monk in simple robes walks through a mountain temple courtyard surrounded by cherry trees and",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone monk in simple robes walks through a mountain temple courtyard surrounded by cherry trees and.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone mountain goat stands on a narrow cliff ledge above a turquoise glacial lake, captured in shar",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone mountain goat stands on a narrow cliff ledge above a turquoise glacial lake, captured in shar.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone photographer is positioned on a rooftop garden above a city at dusk, captured in crisp 4K wit",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone photographer is positioned on a rooftop garden above a city at dusk, captured in crisp 4K wit.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone scientist in a white coat stands inside a futuristic glass lab overlooking a neon city at nig",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone scientist in a white coat stands inside a futuristic glass lab overlooking a neon city at nig.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone snowboarder in a bright red jacket stands on a pristine alpine ridge under a vast aurora\u2011lit ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone snowboarder in a bright red jacket stands on a pristine alpine ridge under a vast aurora\u2011lit .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone woman crouches at the base of a spiral staircase in a narrow tower, fingertips touching the f",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone woman crouches at the base of a spiral staircase in a narrow tower, fingertips touching the f.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone woman kneels in front of a massive wooden door in an old corridor, hands on the handle; then ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone woman kneels in front of a massive wooden door in an old corridor, hands on the handle; then .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone woman sits cross-legged on a tiled rooftop garden, city skyline hazy in the distance; then sh",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone woman sits cross-legged on a tiled rooftop garden, city skyline hazy in the distance; then sh.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone woman sits on a sandy desert dune, knees drawn up against a harsh sky; then she stands and wh",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone woman sits on a sandy desert dune, knees drawn up against a harsh sky; then she stands and wh.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone young woman crouches at the edge of a basketball court, fingertips brushing the ground; then ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone young woman crouches at the edge of a basketball court, fingertips brushing the ground; then .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone young woman holds a low plank on a gym mat, elbows planted and body rigid; then she drives up",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone young woman holds a low plank on a gym mat, elbows planted and body rigid; then she drives up.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone young woman kneels at the edge of a river, one knee in mud and hands near the water; then she",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone young woman kneels at the edge of a river, one knee in mud and hands near the water; then she.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone young woman kneels in wet sand at sunrise, palms flat as waves slide around her knees; then s",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone young woman kneels in wet sand at sunrise, palms flat as waves slide around her knees; then s.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone young woman sits on a subway stairwell step, elbows on knees beneath cold lighting; then she ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone young woman sits on a subway stairwell step, elbows on knees beneath cold lighting; then she .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single adult man crouches at the edge of a city rooftop in light rain, fingers gripping the ledge ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single adult man crouches at the edge of a city rooftop in light rain, fingers gripping the ledge .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single adult man kneels on an icy sidewalk, palms pressed to the ground for balance; then he stand",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single adult man kneels on an icy sidewalk, palms pressed to the ground for balance; then he stand.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single adult man sits on the edge of a fountain, feet dangling above rippling water; then he stand",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single adult man sits on the edge of a fountain, feet dangling above rippling water; then he stand.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single adult man sits on the floor of a spacious studio, legs extended on smooth wood; then he sta",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single adult man sits on the floor of a spacious studio, legs extended on smooth wood; then he sta.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single adult man stands in a quiet museum hall, posture composed among tall columns; then he drops",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single adult man stands in a quiet museum hall, posture composed among tall columns; then he drops.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single adult man stands in a wide open plaza, feet apart on patterned stone; then he drops into a ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single adult man stands in a wide open plaza, feet apart on patterned stone; then he drops into a .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single ballerina rehearses in an abandoned theater with velvet seats and ornate gold balconies, ca",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single ballerina rehearses in an abandoned theater with velvet seats and ornate gold balconies, ca.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single bonsai tree sits on a wooden table in a minimalist room with shoji screens and soft morning",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single bonsai tree sits on a wooden table in a minimalist room with shoji screens and soft morning.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single candle flame is the subject in a dark room with stained\u2011glass reflections painting the wall",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single candle flame is the subject in a dark room with stained\u2011glass reflections painting the wall.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single dancer in a rain\u2011soaked city plaza is framed by neon signs and reflective puddles, captured",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single dancer in a rain\u2011soaked city plaza is framed by neon signs and reflective puddles, captured.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single giraffe stands on an African savanna at sunrise with acacia silhouettes and distant hills, ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single giraffe stands on an African savanna at sunrise with acacia silhouettes and distant hills, .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single glacier calving is the focus in a polar fjord with blue ice cliffs and distant mountains, c",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single glacier calving is the focus in a polar fjord with blue ice cliffs and distant mountains, c.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single humming bronze statue in a quiet plaza is filmed in cinematic 4K with wet stone reflections",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single humming bronze statue in a quiet plaza is filmed in cinematic 4K with wet stone reflections.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single hummingbird hovers in front of vibrant tropical flowers near a waterfall, rendered in ultra",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single hummingbird hovers in front of vibrant tropical flowers near a waterfall, rendered in ultra.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single hummingbird moth hovers in a twilight garden filled with glowing fireflies and soft purple ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single hummingbird moth hovers in a twilight garden filled with glowing fireflies and soft purple .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single lantern boat is the subject on a river running through an ancient town with stone bridges a",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single lantern boat is the subject on a river running through an ancient town with stone bridges a.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single man kneels under a narrow spotlight on an empty stage, head bowed over dark wooden boards; ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single man kneels under a narrow spotlight on an empty stage, head bowed over dark wooden boards; .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single man sits on a train platform bench, shoulders rounded in still air; then he stands and perf",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single man sits on a train platform bench, shoulders rounded in still air; then he stands and perf.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single man stands at the edge of a swimming pool, knees bent and arms drawn back; then he dives fo",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single man stands at the edge of a swimming pool, knees bent and arms drawn back; then he dives fo.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single man stands at the start of a forest path, arms loose and feet steady on packed dirt; then h",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single man stands at the start of a forest path, arms loose and feet steady on packed dirt; then h.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single middle-aged man stands motionless on an empty basketball court under harsh spotlights, shou",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single middle-aged man stands motionless on an empty basketball court under harsh spotlights, shou.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single orange hot\u2011air balloon floats over a rugged canyon at golden hour, rendered in ultra\u2011high\u2011d",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single orange hot\u2011air balloon floats over a rugged canyon at golden hour, rendered in ultra\u2011high\u2011d.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single owl perches in a moonlit pine forest with silver fog between the trunks, rendered in ultra\u2011",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single owl perches in a moonlit pine forest with silver fog between the trunks, rendered in ultra\u2011.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single peacock is framed in a palace garden with marble fountains and blooming roses, filmed in ul",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single peacock is framed in a palace garden with marble fountains and blooming roses, filmed in ul.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single red maple leaf floats on a clear stream in a forest of golden autumn light, rendered in mac",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single red maple leaf floats on a clear stream in a forest of golden autumn light, rendered in mac.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single sea turtle swims through a bright coral reef under clear tropical water, captured in high\u2011d",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single sea turtle swims through a bright coral reef under clear tropical water, captured in high\u2011d.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single white stallion is centered in a wide lavender field under a pastel sunrise, captured in fil",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single white stallion is centered in a wide lavender field under a pastel sunrise, captured in fil.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single wolf stands on a snowy ridge beneath a pale winter sunrise, rendered in ultra\u2011high\u2011definiti",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single wolf stands on a snowy ridge beneath a pale winter sunrise, rendered in ultra\u2011high\u2011definiti.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single woman crouches beside a mountain trail marker, one hand on rock and breath visible in cold ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single woman crouches beside a mountain trail marker, one hand on rock and breath visible in cold .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single woman kneels on a polished dance floor under spotlights, hands on the ground; then she rise",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single woman kneels on a polished dance floor under spotlights, hands on the ground; then she rise.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single woman sits on a stone step before a temple gate, posture calm amid drifting incense; then s",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single woman sits on a stone step before a temple gate, posture calm amid drifting incense; then s.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single woman stands in a bright kitchen, feet planted on clean tile; then she drops into a deep sq",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single woman stands in a bright kitchen, feet planted on clean tile; then she drops into a deep sq.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single young woman sits on a quiet library stair, back against the railing in warm light; then she",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single young woman sits on a quiet library stair, back against the railing in warm light; then she.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single young woman stands at the edge of a sunflower field, feet apart in soft soil; then she bend",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single young woman stands at the edge of a sunflower field, feet apart in soft soil; then she bend.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single young woman stands in a snowy field, knees bent and hands close to the ground as flakes fal",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single young woman stands in a snowy field, knees bent and hands close to the ground as flakes fal.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A single young woman stands on a rain-slick street, feet planted and shoulders squared under streetl",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A single young woman stands on a rain-slick street, feet planted and shoulders squared under streetl.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary astronaut helmet rests on a reflective black surface inside a dim spacecraft cabin, rende",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary astronaut helmet rests on a reflective black surface inside a dim spacecraft cabin, rende.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary astronaut in a reflective suit explores a silent desert of pale dunes beneath a dramatic ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary astronaut in a reflective suit explores a silent desert of pale dunes beneath a dramatic .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary bronze hummingbird statue in a quiet courtyard is filmed in cinematic 4K, the ground stil",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary bronze hummingbird statue in a quiet courtyard is filmed in cinematic 4K, the ground stil.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary figure in a long coat walks through a snowy street of traditional wooden houses lit by wa",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary figure in a long coat walks through a snowy street of traditional wooden houses lit by wa.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary man crouches at the start of a wooden bridge, fingertips touching weathered boards; then ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary man crouches at the start of a wooden bridge, fingertips touching weathered boards; then .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary man crouches in a warehouse aisle between tall shelves, palms briefly touching the floor;",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary man crouches in a warehouse aisle between tall shelves, palms briefly touching the floor;.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary man crouches on a bare theater stage under one tight spotlight, shoulders slumped over th",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary man crouches on a bare theater stage under one tight spotlight, shoulders slumped over th.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary man drops to a kneel in the middle of a dim stage, caught in a lone spotlight, chin tucke",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary man drops to a kneel in the middle of a dim stage, caught in a lone spotlight, chin tucke.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary man is kneeling beneath a single bright spotlight on a dark stage, torso folded and gaze ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary man is kneeling beneath a single bright spotlight on a dark stage, torso folded and gaze .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary man kneels beside a long country road, one hand touching the asphalt at dawn; then he sta",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary man kneels beside a long country road, one hand touching the asphalt at dawn; then he sta.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary man kneels in a dim workshop, palms on concrete amid warm industrial lamps; then he stand",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary man kneels in a dim workshop, palms on concrete amid warm industrial lamps; then he stand.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary man sits on a rocky river crossing, boots in shallow, clear water; then he stands and tak",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary man sits on a rocky river crossing, boots in shallow, clear water; then he stands and tak.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary man stands on a windy cliff path, knees flexed near a puddle; then he drops into a deep c",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary man stands on a windy cliff path, knees flexed near a puddle; then he drops into a deep c.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary man waits at a quiet subway platform edge, knees flexed and jaw set beneath fluorescent l",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary man waits at a quiet subway platform edge, knees flexed and jaw set beneath fluorescent l.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary old man kneels in a dim workshop, palms on concrete amid warm industrial lamps; then she ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary old man kneels in a dim workshop, palms on concrete amid warm industrial lamps; then she .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary paper lantern floats on a calm lake surrounded by dark reeds and distant mountains, filme",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary paper lantern floats on a calm lake surrounded by dark reeds and distant mountains, filme.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary pianist performs in a spacious loft with floor\u2011to\u2011ceiling windows overlooking a rainy sky",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary pianist performs in a spacious loft with floor\u2011to\u2011ceiling windows overlooking a rainy sky.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary street saxophonist performs on a quiet cobblestone alley lined with warm caf\u00e9 lights and ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary street saxophonist performs on a quiet cobblestone alley lined with warm caf\u00e9 lights and .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary surfer is framed against a tropical shoreline with palm silhouettes and a glowing sunset,",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary surfer is framed against a tropical shoreline with palm silhouettes and a glowing sunset,.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary teenage girl sits on a park bench beneath swirling autumn leaves, posture folded inward; ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary teenage girl sits on a park bench beneath swirling autumn leaves, posture folded inward; .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary woman crouches in a narrow alley, knees bent and hands on thighs under stark lighting; th",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary woman crouches in a narrow alley, knees bent and hands on thighs under stark lighting; th.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary woman kneels in a dim workshop, palms on concrete amid warm industrial lamps; then she st",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary woman kneels in a dim workshop, palms on concrete amid warm industrial lamps; then she st.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary woman kneels in a field of tall grass, torso low and one knee grounded; then she rises an",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary woman kneels in a field of tall grass, torso low and one knee grounded; then she rises an.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary woman kneels in a flower shop aisle, hands near the floor among vivid bouquets; then she ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary woman kneels in a flower shop aisle, hands near the floor among vivid bouquets; then she .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary young man kneels in a dim workshop, palms on concrete amid warm industrial lamps; then he",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary young man kneels in a dim workshop, palms on concrete amid warm industrial lamps; then he.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary young woman crouches at the edge of a beach, hands on knees under bright sun; then she ri",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary young woman crouches at the edge of a beach, hands on knees under bright sun; then she ri.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary young woman kneels in a dim workshop, palms on concrete amid warm industrial lamps; then ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary young woman kneels in a dim workshop, palms on concrete amid warm industrial lamps; then .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary young woman leans forward with both hands on a stone wall in a medieval courtyard; then s",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary young woman leans forward with both hands on a stone wall in a medieval courtyard; then s.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A solitary young woman sits on a picnic blanket in a wide meadow, legs folded in tall grass; then sh",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A solitary young woman sits on a picnic blanket in a wide meadow, legs folded in tall grass; then sh.mp4"
+        ]
+    },
+    {
+        "prompt_en": "An elderly violinist is the only figure on a balcony overlooking a glowing Mediterranean harbor at s",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/An elderly violinist is the only figure on a balcony overlooking a glowing Mediterranean harbor at s.mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone adult man sits on a folding chair on an empty theater stage, hands still in his lap; then he ",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone adult man sits on a folding chair on an empty theater stage, hands still in his lap; then he .mp4"
+        ]
+    },
+    {
+        "prompt_en": "A lone albatross glides above storm\u2011tossed ocean waves under a dramatic sky, rendered in ultra\u2011high\u2011",
+        "dimension": [
+            "subject_consistency",
+            "background_consistency",
+            "temporal_flickering",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality",
+            "human_action",
+            "temporal_style",
+            "overall_consistency"
+        ],
+        "video_list": [
+            "/shared/john/sample_videos/causal-forcing/A lone albatross glides above storm\u2011tossed ocean waves under a dramatic sky, rendered in ultra\u2011high\u2011.mp4"
+        ]
+    }
+]

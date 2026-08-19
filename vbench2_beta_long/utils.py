@@ -16,7 +16,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torchvision.transforms as transforms
-from torchvision.io import write_video
+# from torchvision.io import write_video #[][] betting that this isn't used by the modules
 from decord import VideoReader
 
 from collections import defaultdict
@@ -28,8 +28,119 @@ logger = logging.getLogger(__name__)
 from scenedetect import open_video, SceneManager, split_video_ffmpeg
 from scenedetect.detectors import ContentDetector
 from scenedetect.video_splitter import split_video_ffmpeg
-from moviepy.editor import VideoFileClip
+# from moviepy.editor import VideoFileClip #[] removed because not used
 from scipy.stats import rankdata
+
+
+
+
+# # John: alternative saver to torchvision.io.write_video
+
+from pathlib import Path
+from fractions import Fraction
+
+import numpy as np
+import torch
+
+
+def write_video(
+    filename,
+    video_array,
+    fps,
+    video_codec="libx264",
+    options=None,
+    pix_fmt="yuv420p",
+):
+    """
+    Replacement for torchvision.io.write_video for video-only writing.
+
+    Args:
+        filename: output path, e.g. "out.mp4"
+        video_array: Tensor or ndarray with shape [T, H, W, C], RGB order.
+                     dtype can be uint8, float in [0,1], or float in [0,255].
+        fps: frames per second
+        video_codec: e.g. "libx264", "h264", "mpeg4"
+        options: ffmpeg codec options, e.g. {"crf": "17", "preset": "slow"}
+        pix_fmt: output pixel format. "yuv420p" is best for mp4 compatibility.
+    """
+    try:
+        import av
+    except ImportError as e:
+        raise ImportError(
+            "PyAV is required for write_video_compat. Install with: pip install av"
+        ) from e
+
+    filename = str(Path(filename))
+    options = {} if options is None else dict(options)
+
+    # Torch tensor -> CPU numpy
+    if isinstance(video_array, torch.Tensor):
+        video_array = video_array.detach().cpu()
+
+        # Convert float tensors to uint8
+        if video_array.dtype.is_floating_point:
+            # Assume [0, 1] if max <= 1, otherwise assume [0, 255]
+            if video_array.numel() > 0 and float(video_array.max()) <= 1.0:
+                video_array = video_array.clamp(0, 1) * 255.0
+            else:
+                video_array = video_array.clamp(0, 255)
+            video_array = video_array.round().to(torch.uint8)
+        elif video_array.dtype != torch.uint8:
+            video_array = video_array.clamp(0, 255).to(torch.uint8)
+
+        video_array = video_array.numpy()
+
+    else:
+        video_array = np.asarray(video_array)
+        if np.issubdtype(video_array.dtype, np.floating):
+            if video_array.size > 0 and video_array.max() <= 1.0:
+                video_array = np.clip(video_array, 0, 1) * 255.0
+            else:
+                video_array = np.clip(video_array, 0, 255)
+            video_array = np.rint(video_array).astype(np.uint8)
+        elif video_array.dtype != np.uint8:
+            video_array = np.clip(video_array, 0, 255).astype(np.uint8)
+
+    if video_array.ndim != 4:
+        raise ValueError(f"Expected video_array shape [T,H,W,C], got {video_array.shape}")
+
+    t, h, w, c = video_array.shape
+
+    if c == 1:
+        video_array = np.repeat(video_array, 3, axis=-1)
+        c = 3
+
+    if c != 3:
+        raise ValueError(f"Expected 3 RGB channels, got C={c}")
+
+    # Make memory contiguous for PyAV
+    video_array = np.ascontiguousarray(video_array)
+
+    # PyAV accepts integer fps or Fraction
+    if isinstance(fps, float):
+        rate = Fraction(fps).limit_denominator(1000)
+    else:
+        rate = fps
+
+    with av.open(filename, mode="w") as container:
+        stream = container.add_stream(video_codec, rate=rate)
+        stream.width = w
+        stream.height = h
+        stream.pix_fmt = pix_fmt
+
+        # Optional encoding args, similar to torchvision write_video options
+        stream.options = options
+
+        for frame_np in video_array:
+            frame = av.VideoFrame.from_ndarray(frame_np, format="rgb24")
+            for packet in stream.encode(frame):
+                container.mux(packet)
+
+        # Flush encoder
+        for packet in stream.encode():
+            container.mux(packet)
+
+
 
 ###################################################################################################
 # Consistency Dimensions' Score Distribution Transformation
@@ -185,7 +296,7 @@ def split_video_into_clips(video_path, output_path, duration=2, fps=8):
 
 
         save_path = os.path.join(output_dir, f"{video_name}_{segment_count:03d}.mp4")
-        write_video(save_path, extended_segment_frames, fps=fps)
+        # (save_path, extended_segment_frames, fps=fps)
         print(f"Extended and saved the last segment: {save_path}")
 
     return output_dir
@@ -217,7 +328,8 @@ def reorganize_clips_results(detailed_results, dimension=None):
     # all_results = sum(all_scores_flat) / len(all_scores_flat) if all_scores_flat else 0
     all_results = sum([item['video_results'] for item in average_scores_list]) / len(average_scores_list) if average_scores_list else 0
     video_cnt=len([item['video_results'] for item in average_scores_list])
-    if dimension == 'temporal_flickering':
+    if dimension == 'temporal_flickering' or dimension == 'unitemp_flickering_ratio' \
+        or dimension == 'temporal_flickering_ratio': # [][] modified
         average_scores_list.append({
                 'long_video_cnt': video_cnt
             })

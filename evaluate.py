@@ -48,12 +48,13 @@ def parse_args():
     )
     parser.add_argument(
         "--mode",
-        choices=['custom_input', 'vbench_standard', 'vbench_category'],
+        choices=['custom_input', 'vbench_standard', 'vbench_category','custom_input_original'],
         default='vbench_standard',
         help="""This flags determine the mode of evaluations, choose one of the following:
         1. "custom_input": receive input prompt from either --prompt/--prompt_file flags or the filename
         2. "vbench_standard": evaluate on standard prompt suite of VBench
         3. "vbench_category": evaluate on specific category
+        4. "custom_input_original": evaluation of the original custom_input
         """,
     )
     parser.add_argument(
@@ -121,8 +122,10 @@ def main():
 
     if (args.prompt_file is not None) and (args.prompt != "None"):
         raise Exception("--prompt_file and --prompt cannot be used together")
-    if (args.prompt_file is not None or args.prompt != "None") and (args.mode!='custom_input'):
-        raise Exception("must set --mode=custom_input for using external prompt")
+
+    ## [][] john: ignore so we can pass custom prompt file, but eval on each dimension, the same as vbench_full_info.json
+    # if (args.prompt_file is not None or args.prompt != "None") and (args.mode!='custom_input'):
+    #     raise Exception("must set --mode=custom_input for using external prompt")
 
     if args.prompt_file:
         with open(args.prompt_file, 'r') as f:

@@ -163,6 +163,37 @@ class VBenchLong(VBench):
                     for video_info in cur_full_info_list:
                         video_info["prompt_en"] = video_map[os.path.abspath(video_info["video_list"][0])]
 
+        elif mode=='long_custom_input_original':
+            cur_full_info_dict = {} # to save the prompt and video path info for the current dimensions
+
+            # get splitted video paths
+            splited_videos_path = os.path.join(videos_path, 'split_clip')
+
+            
+            for prompt_folder in os.listdir(splited_videos_path):
+                prompt_folder_path = os.path.join(splited_videos_path, prompt_folder)
+                if not os.path.isdir(prompt_folder_path):
+                    continue  # Skip if it's not a directory
+                
+
+                base_prompt = prompt_folder.split('-Scene')[0]
+
+               
+                if base_prompt not in cur_full_info_dict:
+                    cur_full_info_dict[base_prompt] = {
+                        "prompt_en": base_prompt,
+                        "dimension": dimension_list,
+                        "video_list": []
+                    }
+
+                
+                for video_file in os.listdir(prompt_folder_path):
+                    if video_file.endswith(('.mp4', '.avi', '.mov')):
+                        
+                        video_path = os.path.join(prompt_folder_path, video_file)
+                        cur_full_info_dict[base_prompt]["video_list"].append(video_path)
+            cur_full_info_list = list(cur_full_info_dict.values())
+
         elif mode=='vbench_category':
             self.check_dimension_requires_extra_info(dimension_list)
             CUR_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -230,35 +261,53 @@ class VBenchLong(VBench):
         elif mode=='long_custom_input':
             cur_full_info_dict = {} # to save the prompt and video path info for the current dimensions
 
-            # get splitted video paths
-            splited_videos_path = os.path.join(videos_path, 'split_clip')
+            # modifications
+            all_video_path = [os.path.abspath(file) for file in list(chain.from_iterable(vid["video_list"] for vid in cur_full_info_list))]
 
+
+            # grad data about the relationships between videos, prompts (extended and base)
+            video_names = os.listdir(videos_path)
+            video_map = {} # absolute path
+            video_map_base_prompt_to_actual_prompt = {} # base path to actual prompt
+            prompt_map = {} # base prompt to actual video prompt name abs path
+            prompt_map_only_base_name = {} # base prompt to actual video prompt name
             
-            for prompt_folder in os.listdir(splited_videos_path):
-                prompt_folder_path = os.path.join(splited_videos_path, prompt_folder)
-                if not os.path.isdir(prompt_folder_path):
-                    continue  # Skip if it's not a directory
-                
 
-                base_prompt = prompt_folder.split('-Scene')[0]
+            # prompt_list # extended prompt to short prompts
 
-               
-                if base_prompt not in cur_full_info_dict:
-                    cur_full_info_dict[base_prompt] = {
-                        "prompt_en": base_prompt,
-                        "dimension": dimension_list,
-                        "video_list": []
-                    }
+            # prompt_list[prompt_map[base_prompt]]
+            for prompt_key in prompt_list:
+                base_prompt_key = os.path.basename(prompt_key)
+                abs_prompt_key = os.path.abspath(prompt_key)
 
-                
-                for video_file in os.listdir(prompt_folder_path):
-                    if video_file.endswith(('.mp4', '.avi', '.mov')):
+                if base_prompt_key in video_names:
+                    video_map[abs_prompt_key] = prompt_list[prompt_key]
+                    video_map_base_prompt_to_actual_prompt[base_prompt_key.split('.mp4')[0]] = prompt_list[prompt_key]
+                    
+                    prompt_map[prompt_list[prompt_key]] = prompt_map.get(prompt_list[prompt_key], []) + [abs_prompt_key]
+                    prompt_map_only_base_name[prompt_list[prompt_key]] = prompt_map_only_base_name.get(prompt_list[prompt_key], []) + [base_prompt_key.split('.mp4')[0]]
+
+                else:
+                    print(f'WARNING!!! This required video is not found! Missing benchmark videos can lead to unfair evaluation result. The missing video is: {abs_prompt_key}')
+            
+            
+            # load the full info json file
+            full_info_list = load_json(self.full_info_dir)
+            for prompt_dict in full_info_list:
+                entry = prompt_dict.copy()
+                # verify that the prompt fits wihtin the dimension(s)
+                if set(dimension_list) & set(entry["dimension"]): 
+                    entry['video_list'] = []
+
+                    # add split_clip path to the video_list
+                    for video_folder_name in prompt_map_only_base_name[entry['prompt_en']]:
+                        prompt_folder_path = os.path.join(videos_path, 'split_clip', video_folder_name)
                         
-                        video_path = os.path.join(prompt_folder_path, video_file)
-                        cur_full_info_dict[base_prompt]["video_list"].append(video_path)
-            cur_full_info_list = list(cur_full_info_dict.values())
-
-
+                        for video_file in os.listdir(prompt_folder_path):
+                            if video_file.endswith(('.mp4', '.avi', '.mov')):
+                                video_path = os.path.join(prompt_folder_path, video_file)
+                                entry["video_list"].append(video_path)
+                    cur_full_info_list.append(entry)
         else:
             full_info_list = load_json(self.full_info_dir)
             video_names = os.listdir(videos_path)

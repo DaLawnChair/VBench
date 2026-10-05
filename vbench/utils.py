@@ -387,6 +387,12 @@ def save_json(data, path, indent=4):
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=indent)
 
+
+# sorting of the per-video results written to *_eval_results.json lives in a
+# dependency-free module so scripts/sort_eval_results.py can use it without
+# importing decord & co.
+from .eval_results_sort import sort_eval_results  # noqa: E402,F401
+
 def load_json(path):
     """
     Load a JSON file from the given file path.

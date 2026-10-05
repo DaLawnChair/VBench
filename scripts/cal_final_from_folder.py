@@ -46,7 +46,8 @@ VBENCH_16_DIMENSIONS_TO_TASK_INFO = {
     "overall_consistency": "overall consistency",
 }
 
-EXTRA_DIMENSIONS = { 'temporal_flickering_ratio', 'unitemp_flickering_ratio'}
+# EXTRA_DIMENSIONS = { 'temporal_flickering_ratio', 'unitemp_flickering_ratio'}
+EXTRA_DIMENSIONS = set()
 
 
 def submission(file):
@@ -195,6 +196,14 @@ if __name__=="__main__":
     # upload_dict = submission(folder)
     print(f"your submission info: \n{upload_dict} \n")
 
+    # Fail before opening final_scores.txt: a missing dimension would otherwise
+    # be scored as 0 in the quality/semantic totals and then crash mid-write.
+    missing = [dim for dim in TASK_INFO if dim not in upload_dict]
+    if missing:
+        sys.exit(f"ERROR: {folder} is missing eval_results for dimension(s): "
+                 f"{', '.join(missing)}. Re-run evaluate.py for them; "
+                 f"final_scores.txt not written.")
+
     # if args.file_replacement is not None:
     #     upload_dict_replacement = submission(args.file_replacement)
     # if args.file_replacement_dims is not None:
@@ -209,23 +218,32 @@ if __name__=="__main__":
     quality_score = get_quality_score(normalized_score)
     semantic_score = get_semantic_score(normalized_score)
     final_score = get_final_score(quality_score, semantic_score)
-    print('+------------------|------------------+')
-    print(f'|     quality score|{quality_score}|')
-    print(f'|    semantic score|{semantic_score}|')
-    print(f'|       total score|{final_score}|')
-    print('+------------------|------------------+')
+    out_path = folder / "final_scores.txt"
+    out_f = open(out_path, "w")
+    def tee(*a, **kw):
+        print(*a, **kw)
+        print(*a, **kw, file=out_f)
+    tee('+------------------|------------------+')
+    tee(f'|     quality score|{quality_score}|')
+    tee(f'|    semantic score|{semantic_score}|')
+    tee(f'|       total score|{final_score}|')
+    tee('+------------------|------------------+')
 
 
 #     # import ipdb;ipdb.set_trace()
 
-    print(f"{final_score*100:.6f},{quality_score*100:.6f},{semantic_score*100:.6f},", end="")
+    tee(f"{final_score*100:.6f},{quality_score*100:.6f},{semantic_score*100:.6f},", end="")
     # print(f"{final_score}\t{quality_score}\t{semantic_score}\t")
     
-    print(f"{ ','.join(f'{upload_dict[dim]*100:.6f}' for dim in TASK_INFO)}")
-    print(f"Normalized_score: { ','.join(f'{normalized_score[dim]*100:.6f}' for dim in TASK_INFO)}")
+    tee(f"{ ','.join(f'{upload_dict[dim]*100:.6f}' for dim in TASK_INFO)}")
+    tee(f"Normalized_score: { ','.join(f'{normalized_score[dim]*100:.6f}' for dim in TASK_INFO)}")
  
-    print("extra dimensions:")
-    print(f"{ ','.join(f'{upload_dict[dim]:.6f}' for dim in EXTRA_DIMENSIONS)}")
+    tee("extra dimensions:")
+    tee(f"{ ','.join(f'{upload_dict[dim]:.6f}' for dim in EXTRA_DIMENSIONS)}")
+    out_f.close()
+    print(f"Saved to {out_path}")
     
 
-# # python3 cal_final_from_folder.py --folder /shared/john/AR_dawood/infinity-rope/vbench_long/self_forcing_dmd_plus_inf_rope/sf_cf_extended/vbench_scores/full_sf_all_dims
+    # python3 scripts/cal_final_from_folder.py --folder /mnt/ddn/george/diffusion/john-AR/vbench_results/260828_dc_gan_dmd_msm_ckpt_gan_low_renoise_150_250_dmd_standard_and_temporal_regularization_on_step_1_only_gpu2/iter500/double_cache/vbench_scores/full_sf_all_dims
+    # python3 scripts/cal_final_from_folder.py --folder /mnt/ddn/george/diffusion/john-AR/vbench_results/260828_dc_gan_dmd_msm_ckpt_gan_low_renoise_150_250_dmd_standard_and_temporal_regularization_on_step_1_only_gpu2/iter750/double_cache/vbench_scores/full_sf_all_dims
+    # python3 scripts/cal_final_from_folder.py --folder /mnt/ddn/george/diffusion/john-AR/vbench_results/260828_dc_gan_dmd_msm_ckpt_gan_low_renoise_150_250_dmd_standard_and_temporal_regularization_on_step_1_only_gpu2/iter1000/double_cache/vbench_scores/full_sf_all_dims

@@ -1,6 +1,6 @@
 import os
 
-from .utils import get_prompt_from_filename, init_submodules, save_json, load_json
+from .utils import get_prompt_from_filename, init_submodules, save_json, load_json, sort_eval_results
 import importlib
 from itertools import chain
 from pathlib import Path
@@ -295,5 +295,7 @@ class VBench(object):
             results_dict[dimension] = results
         output_name = os.path.join(self.output_path, name+'_eval_results.json')
         if get_rank() == 0:
-            save_json(results_dict, output_name)
+            # per-video results of every dimension are written lowest score
+            # first so the worst videos are at the top of the json
+            save_json(sort_eval_results(results_dict), output_name)
             print0(f'Evaluation results saved to {output_name}')

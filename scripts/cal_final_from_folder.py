@@ -84,10 +84,18 @@ def submission(file):
         data = json.load(f)
 
     for key, value in data.items():
+        aggregate = value[0]
+        if isinstance(aggregate, list) and len(value) >= 2 and isinstance(value[1], list):
+            # [metric_names, metric_values, per_video]: dynamic_degree with the
+            # diff-of-diff metrics; the dimension's own score is the first value.
+            aggregate = value[1][aggregate.index(key)] if key in aggregate else value[1][0]
+            extra = {n: v for n, v in zip(value[0], value[1]) if n != key}
+            if extra:
+                print(f"{key} extra metrics (not part of the VBench score): {extra}")
         if key in EXTRA_DIMENSIONS:
-            upload_data[key] = value[0]
+            upload_data[key] = aggregate
         if key in VBENCH_16_DIMENSIONS:
-            upload_data[VBENCH_16_DIMENSIONS_TO_TASK_INFO[key]] = value[0]
+            upload_data[VBENCH_16_DIMENSIONS_TO_TASK_INFO[key]] = aggregate
         else:
             print(f"Warning: Key {key} not in VBENCH_16_DIMENSIONS, skipping.")
 

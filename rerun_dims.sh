@@ -51,7 +51,7 @@ else
 fi
 
 
-Some notes on it:
+# Some notes on it:
 # - It filters out the flood of `-1…-4 not found` warnings, so a real traceback is visible this time.
 # - Leftover orphan `*_full_info.json` files from the failed attempt shouldn't matter. `cal_final_from_folder.py` presumably reads the `*_eval_results.json` files, but check that in the main conversation before relying on it.
 # - A related fix to consider: have `run_sf_cf_eval_sleep.sh` `tee` each dimension's output into a per-folder log. That way the reason for the next failure gets saved instead of lost with the terminal.

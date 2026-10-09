@@ -25,17 +25,20 @@ def sort_eval_results(results_dict):
     """Sort each dimension's per-video results from lowest to highest score.
 
     `results_dict` is what `VBench.evaluate` dumps to `*_eval_results.json`:
-    {dimension: [aggregate_score, [{'video_path': ..., 'video_results': ...}, ...]]}.
+    {dimension: [aggregate_score, [{'video_path': ..., 'video_results': ...}, ...]]}
+    (dynamic_degree uses [metric_names, metric_values, per_video_list] instead).
     The aggregate score and every per-video dict are left untouched; only the
     order of the per-video list changes (stable sort, so ties keep evaluation
     order). Dimensions whose value does not have that shape are returned as-is.
     """
     sorted_dict = {}
     for dimension, value in results_dict.items():
-        if (isinstance(value, (list, tuple)) and len(value) == 2
-                and isinstance(value[1], list)):
-            per_video = sorted(value[1], key=_video_results_sort_key)
-            sorted_dict[dimension] = [value[0], per_video]
+        # [aggregate, per_video] (upstream) or [names, values, per_video]
+        # (dynamic_degree with the diff-of-diff metrics): sort the last item.
+        if (isinstance(value, (list, tuple)) and len(value) in (2, 3)
+                and isinstance(value[-1], list)):
+            per_video = sorted(value[-1], key=_video_results_sort_key)
+            sorted_dict[dimension] = list(value[:-1]) + [per_video]
         else:
             sorted_dict[dimension] = value
     return sorted_dict

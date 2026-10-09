@@ -11,6 +11,14 @@
 # prompts, one "<truncated prompt>-0.mp4" each). Scores are written to
 # <video_path>/vbench_scores/. The GPU can be overridden with the VBENCH_DEVICE
 # env var (default: the hardcoded `device` below).
+#
+# Resumable: a dimension whose *_eval_results.json already exists in
+# <video_path>/vbench_scores/full_sf_all_dims/ is skipped, as are
+# cal_final_from_folder.py (if final_scores.txt exists) and the cf
+# dynamic_degree pass (if its *_eval_results.json exists), so a run that was
+# killed part-way (e.g. by systemd-oomd) can simply be relaunched on the same
+# paths. Set VBENCH_RESUME=0 to re-score everything. Each evaluate.py call's
+# output is also saved to <video_path>/vbench_scores/logs/.
 
 export VBENCH_CACHE_DIR="/mnt/ddn/george/VBench/pretrained"
 
@@ -48,6 +56,29 @@ dimensions=(subject_consistency background_consistency aesthetic_quality \
             human_action temporal_flickering motion_smoothness dynamic_degree \
             appearance_style)
 # dimensions=(scene)
+
+# skip work whose result files already exist (VBENCH_RESUME=0 disables)
+RESUME="${VBENCH_RESUME:-1}"
+
+# dim_done <results_dir> <dimension>: true if some *_eval_results.json in
+# <results_dir> has <dimension> as its top-level key (evaluate.py writes that
+# file only after the dimension finished; an orphan *_full_info.json without
+# it means the run died mid-dimension and must be redone)
+dim_done() {
+    local results_dir="$1" dimension="$2"
+    [[ "$RESUME" == "1" ]] || return 1
+    python3 - "$results_dir" "$dimension" <<'PY'
+import glob, json, os, sys
+d, dim = sys.argv[1], sys.argv[2]
+for f in glob.glob(os.path.join(d, "*_eval_results.json")):
+    try:
+        if dim in json.load(open(f)):
+            sys.exit(0)
+    except Exception:
+        pass
+sys.exit(1)
+PY
+}
 
 wait_for_videos() {
     local video_dir="$1"
@@ -102,39 +133,60 @@ for video_path in "${video_paths[@]}"; do
     wait_for_videos "$video_path/$VIDEO_SUBDIR"
 
     echo "Evaluating videos in: $video_path/$VIDEO_SUBDIR"
+    sf_out="$video_path/vbench_scores/full_sf_all_dims"
+    cf_out="$video_path/vbench_scores/cf_dynamic_degree"
+    log_dir="$video_path/vbench_scores/logs"
+    mkdir -p "$log_dir"
     dims_failed=0
     for dimension in "${dimensions[@]}"; do
-
+        if dim_done "$sf_out" "$dimension"; then
+            echo "$(date): $dimension already scored in $sf_out, skipping"
+            continue
+        fi
+        echo "$(date): scoring $dimension"
         if ! CUDA_VISIBLE_DEVICES=$device python3 evaluate.py \
             --videos_path "$video_path/$VIDEO_SUBDIR" \
             --mode custom_input \
             --full_json_dir custom_small_vbench_set/sf_all_dimensions_extended_to_base_special_prompts.json \
             --prompt_file custom_small_vbench_set/sf_prompts_extended_to_base_special_prompts_mapping.json \
-            --output_path "$video_path/vbench_scores/full_sf_all_dims/" \
-            --dimension $dimension; then
+            --output_path "$sf_out/" \
+            --dimension $dimension 2>&1 | tee "$log_dir/${dimension}_$(date +%y%m%d_%H%M).log"; then
+            :
+        fi
+        if [[ ${PIPESTATUS[0]} -ne 0 ]]; then
             fail "$video_path" "evaluate.py --dimension $dimension"
             dims_failed=1
         fi
     done
 
     # a failed dimension would make the summary wrong, so skip it
-    if [[ $dims_failed -eq 0 ]]; then
-        echo "scripts/cal_final_from_folder.py for folder $video_path/vbench_scores/full_sf_all_dims"
-        if ! CUDA_VISIBLE_DEVICES=$device python3 scripts/cal_final_from_folder.py --folder "$video_path/vbench_scores/full_sf_all_dims"; then
+    if [[ $dims_failed -ne 0 ]]; then
+        fail "$video_path" "cal_final_from_folder.py (skipped: a dimension failed)"
+    elif [[ "$RESUME" == "1" && -f "$sf_out/final_scores.txt" ]]; then
+        echo "$(date): $sf_out/final_scores.txt exists, skipping cal_final_from_folder.py"
+    else
+        echo "scripts/cal_final_from_folder.py for folder $sf_out"
+        if ! CUDA_VISIBLE_DEVICES=$device python3 scripts/cal_final_from_folder.py --folder "$sf_out"; then
             fail "$video_path" "cal_final_from_folder.py"
         fi
-    else
-        fail "$video_path" "cal_final_from_folder.py (skipped: a dimension failed)"
     fi
 
-    if ! CUDA_VISIBLE_DEVICES=$device python3 evaluate.py \
-        --videos_path "$video_path/$VIDEO_SUBDIR" \
-        --mode custom_input \
-        --full_json_dir custom_small_vbench_set/cf_prompts_extended_dynamic_degree.json \
-        --prompt_file custom_small_vbench_set/cf_prompts_extended_dynamic_degree_mapping.json \
-        --output_path "$video_path/vbench_scores/cf_dynamic_degree" \
-        --dimension dynamic_degree; then
-        fail "$video_path" "evaluate.py cf dynamic_degree"
+    if dim_done "$cf_out" dynamic_degree; then
+        echo "$(date): cf dynamic_degree already scored in $cf_out, skipping"
+    else
+        echo "$(date): scoring cf dynamic_degree"
+        if ! CUDA_VISIBLE_DEVICES=$device python3 evaluate.py \
+            --videos_path "$video_path/$VIDEO_SUBDIR" \
+            --mode custom_input \
+            --full_json_dir custom_small_vbench_set/cf_prompts_extended_dynamic_degree.json \
+            --prompt_file custom_small_vbench_set/cf_prompts_extended_dynamic_degree_mapping.json \
+            --output_path "$cf_out" \
+            --dimension dynamic_degree 2>&1 | tee "$log_dir/cf_dynamic_degree_$(date +%y%m%d_%H%M).log"; then
+            :
+        fi
+        if [[ ${PIPESTATUS[0]} -ne 0 ]]; then
+            fail "$video_path" "evaluate.py cf dynamic_degree"
+        fi
     fi
 done
 
